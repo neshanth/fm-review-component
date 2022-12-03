@@ -1,0 +1,174 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --grey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(213, 19%, 18%);
+  --veryDarkBlue: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+  --width: 40px;
+  --height: 40px;
+  --border-radius: 50%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  background-color: #141519;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg--primary {
+  background-color: var(--darkBlue);
+}
+
+/* Rating Card styles */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-card {
+  background-color: #1f2630;
+  width: 25%;
+  border-radius: 20px;
+  padding: 2em;
+}
+.rating-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rating-img-container,
+.rating-numbers span {
+  border-radius: 50%;
+  width: var(--width);
+  height: var(--height);
+}
+
+.rating-img-container {
+  align-self: flex-start;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+.rating-card-title {
+  color: var(--white);
+}
+.rating-text {
+  color: var(--grey);
+  line-height: 1.5;
+}
+
+.rating-numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-numbers span {
+  color: var(--lightGrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-numbers span:hover {
+  background-color: var(--grey);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 1em 1.5em;
+  border-radius: 50px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn-primary:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.btn-primary:hover,
+.rating-numbers span:hover {
+  transition: all 0.3s;
+}
+
+.rating-card .hide-review,
+.rating-card .hide-thank-you {
+  display: none;
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.final-rating {
+  border-radius: 50px;
+  color: var(--orange);
+  width: 60%;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+.thank-you {
+  margin: 1em 0;
+}
+.rating-selected-value {
+  background-color: var(--orange);
+  color: #fff !important;
+}
+.bill-icon {
+  width: 150px;
+}
+
+@media (max-width: 600px) {
+  .rating-card {
+    width: 90%;
+  }
+}
+
+@media (min-width: 600px) {
+  .rating-card {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .rating-card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .rating-card {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .rating-card {
+    width: 25%;
+  }
+}
