@@ -143,6 +143,22 @@ body {
 .bill-icon {
   width: 150px;
 }
+form fieldset {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.submit-btn {
+  margin-top: 20px;
+}
+
+.submit-btn .btn {
+  width: 100%;
+}
+input {
+  visibility: hidden;
+}
 
 @media (max-width: 600px) {
   .rating-card {

@@ -32,22 +32,34 @@
         <div class="rating-card">
           <div class="rating-content">
             <div class="rating-img-container bg--primary">
-              <img alt="star-icon" class="rating-card-img" width="15" height="15" src="./images/icon-star.svg" />
+              <img alt="" aria-hidden="true" class="rating-card-img" width="15" height="15" src="./images/icon-star.svg" />
             </div>
             <h1 class="rating-card-title">How did we do?</h1>
             <p class="rating-text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-            <div class="rating-numbers">
-              <span class="bg--primary">1</span>
+
+            <form>
+              <div class="rating-numbers">
+                <fieldset>
+                  <label id="1"> <input type="radio" name="rating" id="1" value="1" /> <span class="bg--primary">1</span> </label>
+                  <label> <input type="radio" name="rating" value="2" /> <span class="bg--primary">2</span> </label>
+                  <label> <input type="radio" name="rating" value="3" /> <span class="bg--primary">3</span> </label>
+                  <label> <input type="radio" name="rating" value="4" /> <span class="bg--primary">4</span> </label>
+                  <label> <input type="radio" name="rating" value="5" /> <span class="bg--primary">5</span> </label>
+                </fieldset>
+              </div>
+              <div class="submit-btn">
+                <button class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+            <!-- <span class="bg--primary">1</span>
               <span class="bg--primary">2</span>
               <span class="bg--primary">3</span>
               <span class="bg--primary">4</span>
-              <span class="bg--primary">5</span>
-            </div>
-            <button class="btn btn-primary">Submit</button>
+              <span class="bg--primary">5</span> -->
           </div>
           <div class="thank-you hide-thank-you">
-            <img class="bill-icon" src="images/illustration-thank-you.svg" alt="bill-icon" />
-            <p class="bg--primary final-rating">You selected <span class="rating">4</span> out of 5</p>
+            <img class="bill-icon" src="images/illustration-thank-you.svg" alt="" aria-hidden="true" />
+            <p class="bg--primary final-rating">You selected <span class="rating-final">4</span> out of 5</p>
             <h2 class="rating-card-title">Thank you!</h2>
             <p class="rating-text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
           </div>
